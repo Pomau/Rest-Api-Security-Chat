@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <title>FAC</title>
+</head>
+    <body>
+        <div class="login_block">
+            <div class="input_palace">
+                <p>Type Auth Token</p>
+                <input type="text" placeholder="A-Token" id="login">
+                <button onclick="login()">Login</button>
+                
+            </div>
+            <div class="scan">
+                <a href="registration.html"><button>REGISTRATION</button></a>
+            </div>
+            
+            
+            
+        </div>
+        <div id="particles-js">
+        </div>
+
+        
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type ="text/javascript" src= "{% static 'js/global.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/logic.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/particles.min.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/script.js' %}"></script>
+    <script> require('./render.js'); </script>
+</html>

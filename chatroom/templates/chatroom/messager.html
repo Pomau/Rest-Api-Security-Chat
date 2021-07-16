@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/messager.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <title>Registration</title>
+</head>
+    <body>
+        <div class="main_block">
+            <div class="favorites">
+                <ul class="favorite_ul">
+                    <li class="favorite-li">
+                        <div href="" class="favorite-a">
+                            <img src="https://avatars.mds.yandex.net/get-zen_doc/4449015/pub_6038ca19d4391d5d927e1a1f_6038cd1afe5aef7eb13bb446/scale_1200" alt="">
+                            <p class="favorite-nick">Pomau</p>
+                        </div>
+                    </li>
+                    <li class="favorite-li">
+                        <div href=""  class="favorite-a">
+                            <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="">
+                            <p class="favorite-nick">Pomau</p>
+                        </div>
+                    </li>
+                    <li class="favorite-li">
+                        <div href="" class="favorite-a">
+                            <img src="https://image.flaticon.com/icons/png/512/4786/4786305.png" alt="">
+                            <p class="favorite-nick">Pomau</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="search-div">
+                    <div class="input-group">
+                        <div class="form-outline" style="width: 257px;">
+                            <input id="search-focus" type="search" class="form-control" placeholder="Search" value=""/>
+                        </div>
+                        <div class="search_result" style="display:none">
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                            <div class="search_result_one">
+                                <img src="https://image.flaticon.com/icons/png/512/4786/4786299.png" alt="" height="40" width="40">
+                                <p class="favorite-nick">Pomau</p>
+                            </div>
+                        </div>
+                        {% comment %} <button type="button" class="btn btn-primary">
+                            <img src="https://img.icons8.com/material-outlined/12/ffffff/search--v1.png" style="height:12px"/>
+                        </button> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="messager" >
+                <div class="fl-messages" data-id="qa-fl-messages" style="">
+                </div>
+                <div style="margin-top:50px;display:none" class="messager_div_input">
+                <textarea type="text" placeholder="Напишите ваше сообщение" id="message" rows="2" style="width: calc(100% - 65px);background-color: transparent;color: white;padding: 10px;border: 1px solid #808080;"></textarea>
+                    <button onclick="message()" style="height: 80px;padding: 10px;position: absolute;margin-left: 10px;border: #00ffff;background: #4949ff;;color: white;">Send</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+        </div>
+        <div id="particles-js">
+        </div>
+    
+    
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type ="text/javascript" src= "{% static 'js/global.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/navbar.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/logic.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/particles.min.js' %}"></script>
+    <script type ="text/javascript" src= "{% static 'js/script.js' %}"></script>
+    
+</html>

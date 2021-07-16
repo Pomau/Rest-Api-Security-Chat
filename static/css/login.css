@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    overflow: hidden;
+
+}
+
+#particles-js{
+/* вы можете ставить любую высоту и ширину блока */
+    width: 100%;
+    height: 100vh; 
+    background-color: #193c6d;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+    background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #029797));
+    background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+    background-image: -moz-linear-gradient(45deg, #003073, #029797);
+    background-image: -ms-linear-gradient(45deg, #003073 0, #029797 100%);
+    background-image: -o-linear-gradient(45deg, #003073, #029797);
+    background-image: linear-gradient(135deg, #003073, #029797);
+}
+
+.login_block {
+    border-radius: 12px;
+    height: 30%;
+    width: 35%;
+    top: 50%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.input_palace {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.input_palace p {
+    color: white;
+    padding-bottom: 2%;
+    padding-top: 2% ;
+}
+
+.scan {
+    
+    padding-top: 3%;
+    text-align: center;
+}
+
+.scan button {
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+.scan button:hover {
+    color: blue;
+
+} 
